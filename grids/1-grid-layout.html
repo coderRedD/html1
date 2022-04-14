@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            gap: 1px;
+            background-color: #2196F3;
+            padding: 1px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        @media screen and (max-width: 600px){
+            body {background: blue;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Layout</h1>
+
+    <p>This grid layout contains six columns and three rows. Use this as a starting point for a future webpage/site that fits its needs.</p>
+
+    <div class="grid-container">
+        <div class="item1">ICON and background of header area</div>
+        <div class="item2">Menu
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+        </div>
+        <div class="item3">Main content area with text</div>
+        <div class="item4">ads here</div>
+        <div class="item5">Footer with contact info and footer background</div>
+    </div>
+
+</body>
+
+</html>
